@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Monserrat';
+    src: url('./Fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrat';
+}
+
+
+/* This is a Navbar Styling Code ( 14 - ? )  */
+
+.navbar{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav{
+    height: 100%;
+}
+
+.left-nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+}
+
+.left-nav ul li a{
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.left-nav ul li a .fa-angle-down{
+    font-size: smaller;
+}
+
+.navbar h1{
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.navbar h1 span{
+    display: inline-block;
+}
+
+.right-nav{
+    height: 100%;
+}
+
+.right-nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+}
+
+.right-nav ul li a{
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.right-nav ul li a.SignUp-Btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition: .5s ease;
+}
+.right-nav ul li a.SignUp-Btn:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
