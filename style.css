@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Monserrat';
+    overflow: hidden;
 }
 
 
@@ -86,4 +87,89 @@
     background-color: transparent;
     border: 1px solid black;
     color: black;
+}
+
+.dropdown{
+    width: 400px;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    top: 8%;
+    left: 1.2%;
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.dropdown h5{
+    font-size: large;
+}
+.dropdown-content-1{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content-1 ul.daily-finance{
+    list-style: none;
+}
+.dropdown-content-1 ul.daily-finance li{
+    margin: 10px 0;
+}
+.dropdown-content-1 ul.daily-finance li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+}
+.dropdown-content-1 ul.daily-finance h6{
+    font-size: 16px;
+}
+
+.dropdown-content-1 ul.moneliq-cards{
+    list-style: none;
+}
+.dropdown-content-1 ul.moneliq-cards li{
+    margin: 10px 0;
+}
+.dropdown-content-1 ul.moneliq-cards li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+}
+.dropdown-content-1 ul.moneliq-cards h6{
+    font-size: 16px;
+}
+
+.hamburger-menu{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(133, 133, 133); */
+    cursor: pointer;
+    padding: 12px;
+    z-index: 999;
+    /* display: none; */
+}
+.hamburger-menu span{
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+    pointer-events: none;
+}
+.toggle-menu{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    position: fixed;
+    right: -20%;
+    top: 0;
 }
