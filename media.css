@@ -1,0 +1,167 @@
+@media (max-width : 320px) {
+    .navbar .left-nav{
+        display: none;
+    }
+    .navbar .right-nav{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar h1 span{
+        font-size: 30px;
+    }
+    .hamburger-menu{
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .toggle-menu{
+        display: flex;
+        height: 100%;
+    }
+    .toggle-menu .right-nav ul{
+        top: 34%;
+    }
+}
+
+@media (max-width : 360px) {
+    .navbar .left-nav{
+        display: none;
+    }
+    .navbar .right-nav{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar h1 span{
+        font-size: 30px;
+    }
+    .hamburger-menu{
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .toggle-menu{
+        display: flex;
+        height: 100%;
+    }
+}
+
+@media (max-width : 1024px) {
+    .navbar .left-nav{
+        display: none;
+    }
+    .navbar .right-nav{
+        display: none;
+    }
+    .navbar{
+        padding: 0 20px;
+    }
+    .navbar h1 span{
+        font-size: 30px;
+    }
+    .hamburger-menu{
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .toggle-menu{
+        display: flex;
+    }
+    .black p{
+        width: 45%;
+    }
+    .black .hero-content{
+        height: 38%;
+    }
+
+}
+
+@media (max-width : 768px) {
+    .navbar .left-nav{
+        display: none;
+    }
+    .navbar .right-nav{
+        display: none;
+    }
+    .navbar{
+        padding: 0 20px;
+    }
+    .navbar h1 span{
+        font-size: 30px;
+    }
+    .hamburger-menu{
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .toggle-menu{
+        display: flex;
+    }
+    .black h1{
+        font-size: 5vw;
+    }
+    .black p{
+        width: 60%;
+    }
+    .black .hero-content{
+        height: 35%;
+    }
+}
+
+@media (max-width : 600px) {
+    .navbar .left-nav{
+        display: none;
+    }
+    .navbar .right-nav{
+        display: none;
+    }
+    .navbar{
+        padding: 0 20px;
+    }
+    .navbar h1 span{
+        font-size: 30px;
+    }
+    .hamburger-menu{
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .toggle-menu{
+        display: flex;
+    }
+    .black h1{
+        width: 60%;
+        font-size: 6vw;
+    }
+    .black p{
+        width: 80%;
+    }
+    .black .hero-content{
+        height: 35%;
+        margin-top: 15%;
+    }
+    .scrollDown .arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .hero-dashboard-image{
+        transform: scale(1.6);
+    }
+    .black{
+        overflow: hidden;
+    }
+    .swatchbtn p.btn-1{
+        font-size: 14px;
+    }
+    .swatchbtn p.btn-2{
+        font-size: 14px;
+    }
+    .black a{
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+}

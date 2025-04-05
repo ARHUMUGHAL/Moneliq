@@ -62,7 +62,8 @@ function dropdownAnimation() {
 dropdownAnimation()
 
 
-const hamburgerMenu = document.querySelector('.navbar .hamburger-menu')
+function toggleMenuAnimation(){
+    const hamburgerMenu = document.querySelector('.navbar .hamburger-menu')
 const toggleMenu = document.querySelector('.toggle-menu')
 const span = document.querySelectorAll('.navbar .hamburger-menu span')
 
@@ -105,3 +106,59 @@ hamburgerMenu.addEventListener('click',()=>{
     }
     isMenuOpen = !isMenuOpen
 })
+}
+
+toggleMenuAnimation()
+
+
+function heroboxAnimation(){
+
+    const heroH1 = document.querySelector('.black h1')
+    const heroH1Text = heroH1.textContent.split(' ')
+    const heroBtnText = document.querySelector('.black .hero-content a').textContent
+    
+
+    var storeHeroH1Word = ''
+    heroH1Text.forEach(function(elem){
+        storeHeroH1Word += `<span>${elem}</span>`
+    })
+    heroH1.innerHTML = storeHeroH1Word
+
+    let heroAnimation = gsap.timeline()
+
+    heroAnimation.from('.black',{
+        y : '80%',
+        duration : 1.5,
+        ease : Power4,
+    },'a')
+
+    heroAnimation.from('.black h1 span',{
+        y : '100%',
+        duration : 1.5,
+        ease : Power4,
+        stagger : 0.15,
+        opacity : 0
+    },'a')
+
+    heroAnimation.from('.black p',{
+        opacity : 0,
+        delay : 0.8
+    },'a')
+    heroAnimation.to('.black .hero-content a',{
+        width: '250px',
+        opacity : 1,
+        delay : 0.8
+    },'a')
+    heroAnimation.from('.hero-dashboard-image',{
+        y : '80%',
+        duration : 1,
+        delay : 1
+    },'a')
+    heroAnimation.from('.hero-bottom',{
+        y : '50%',
+        opacity : 0,
+        duration : 1
+    })
+
+}
+heroboxAnimation()
